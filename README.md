@@ -15,3 +15,5 @@
     systemctl start kubelet
     systmectl restart kubelet
     systemctl daemon-reload
+
+to change the dns config we have to do change in kubeapiserver.yaml, 
