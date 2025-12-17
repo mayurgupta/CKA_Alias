@@ -9,3 +9,9 @@
     alias kc="kubectl config get-contexts"
     source <(kubectl completion bash)
     complete -o default -F __start_kubectl k
+
+# system ctl commands:
+    systemctl stop kubelet
+    systemctl start kubelet
+    systmectl restart kubelet
+    systemctl daemon-reload
