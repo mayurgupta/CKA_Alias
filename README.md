@@ -20,6 +20,7 @@ to change the dns config we have to do change in kubeapiserver.yaml,
 
 
 the kube-proxy Pod in the kube-system namespace is erroring or in a CrashLoopBackOff, then running the command 
+
     kubeadm init phase addon all 
 
 will be a quick way to solve your problem
