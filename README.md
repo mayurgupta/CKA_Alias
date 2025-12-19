@@ -15,12 +15,12 @@
     systemctl start kubelet
     systmectl restart kubelet
     systemctl daemon-reload
+    sudo systemctl enable --now containerd
 
 to change the dns config we have to do change in kubeapiserver.yaml, 
 
 
-the kube-proxy Pod in the kube-system namespace is erroring or in a CrashLoopBackOff, then running the command 
+the kube-proxy Pod in the kube-system namespace is erroring or in a CrashLoopBackOff, then running the command.will be a quick way to solve your problem
 
     kubeadm init phase addon all 
 
-will be a quick way to solve your problem
